@@ -1,0 +1,454 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* font-family: 'Oswald', sans-serif; */
+}
+
+body {
+    background-color: #fff;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #fff8;
+    width: 100%;
+    height: 85px;
+    position: fixed;
+    font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 500;
+
+}
+
+#logo {
+    width: 300px;
+    height: 84px;
+    margin-top: -0.5px;
+    margin-left: 20px;
+    margin-right: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Needed to position the navbar */
+    position: relative;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.nav-links li .hovering:hover{
+    background-color: #fff8;
+}
+
+.nav-links li a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+#active {
+    color: red;
+}
+
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+    margin-left: 59.4rem;
+    list-style: none;
+    margin-top: 0px;
+    background-color: #fff8;
+    width:320px;
+    height: 40vh;
+}
+
+ul li:hover>ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+ul li ul li:hover {
+    background-color: #fff8
+}
+/* For Left Part In glass */
+.hello {
+    width: 50%;
+    float: left;
+    margin-top: 2rem;
+    margin-left: 5px;
+}
+/* For Right Part In glass */
+
+.hellos {
+    float: left;
+    width: 45%;
+    margin-left:2px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+ul li ul li a:hover{
+  background-color: none;
+}
+/* Toggle Bar */
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 5px;
+}
+
+.bg-img {
+    background-image: url("firstcover.jpg");
+    min-height: 380px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Needed to position the navbar */
+    position: relative;
+    height: 96vh;
+}
+
+/* Letters Starts here */
+.container {
+    text-align: center;
+    padding-top: 13rem;
+    padding-right: 0rem;
+    padding-bottom: 9rem;
+    padding-left: 0px;
+}
+
+.headline {
+    font-weight: 700;
+    font-size: 80px;
+    font-display: block;
+    color: #ffffff!important;
+    text-align: center;
+    text-shadow: 0em 0.1em 0.1em rgba(0, 0, 0, 0.4)
+}
+
+h2 {
+    font-size: 26px;
+    color: #ffffff!important;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 0em 0.1em 0.1em #9b9b9b;
+}
+/* Letters Ends here */
+
+
+
+
+/*Part1 Ends Here*/
+
+
+/*Apply styles after scroll*/
+
+.scrolling-active {
+    background-color: #fff;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+}
+
+.scrolling-active .nav {
+    height: 50px;
+}
+
+.scrolling-active .nav a {
+    color: #313131;
+}
+
+.scrolling-active .nav #logo {
+    height: 50px;
+}
+
+.scrolling-active .nav-link::after {
+    background-color: #313131;
+}
+
+
+/*Apply styles after scroll end*/
+
+
+
+
+
+/* Footer Starts Here */
+
+.container2 {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    background: grey;
+    overflow: hidden;
+    text-align: center;
+    height: 60vh;
+    color: #eee;
+    font-weight: 240;
+}
+
+.container2 .left1 {
+    float: left;
+    width: 30%;
+    margin-top: 30px;
+}
+
+.container2 .left25 {
+    float: left;
+    width: 20%;
+    margin-top: 20px;
+}
+
+.container2 .right25 {
+    float: left;
+    width: 20%;
+    margin-top: 10px;
+    color: white;
+}
+
+.container2 .right1 {
+    float: left;
+    width: 30%;
+    margin-top: 10px;
+}
+
+
+.container2 .right25 .texts2 p a{
+  color:#fff;
+  text-align: left;
+}
+.texts2 p h2{
+    text-align: left;
+}
+/* For first lefy  and Second left*/
+
+.texts p a,
+.texts1 p a {
+    color: #eee;
+    font-family: serif;
+    font-weight: 20;
+}
+
+.texts {
+    text-align: left;
+    margin-left: 2rem;
+    margin-top: -0.6rem;
+
+}
+
+.texts .texts4{
+  font-size:30px;
+  text-align: left;
+  overflow: hidden;
+  font-weight: 100;
+  margin-bottom: 2rem;
+  margin-left: -0.3rem;
+
+}
+
+.texts p,
+.texts1 p,
+.texts2 p {
+    margin-bottom: 18px;
+    font-family: serif;
+    font-weight: 20;
+}
+
+a{
+  text-decoration: none;
+}
+/* For Second Left */
+
+.texts1 {
+    text-align: left;
+    margin-left: 3rem;
+    margin-top: -1rem;
+}
+
+
+/* For Second Right */
+
+.texts2 {
+    text-align: left;
+}
+
+
+/* First Right */
+
+.logos {
+    margin-right: 9rem;
+    margin-top: 0.5rem;
+    radius: 20px;
+    margin-top: 2rem;
+
+    /* border-radius: 50%; */
+}
+
+.images2 {
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+
+
+/* Media Queries */
+
+@media screen and (max-width:900px) {
+    .nav-links {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:960px) {
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 8vh;
+        background-color: #fff8;
+        width: 100%;
+        height: 70px;
+        position: absolute;
+    }
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 58vh;
+        /* top:12.5vh; */
+        top: 10.8vh;
+        background-color: #fff9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translatex(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li {
+        margin-top: 20px;
+        opacity: 0;
+    }
+    .burger {
+        display: block;
+    }
+    #logo {
+        width: 200px;
+        height: 70px;
+        padding-right: 20px;
+        padding-left: 50px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* Needed to position the navbar */
+        position: relative;
+    }
+    .bg-img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* Needed to position the navbar */
+        position: relative;
+        /* height: 92vh; */
+    }
+    .container {
+        text-align: center;
+        padding-top: 10rem;
+        padding-right: 0rem;
+        padding-bottom: 6rem;
+        padding-left: 0px;
+    }
+    .headline {
+        font-size: 45px;
+        color: white;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .subheadline {
+        display: none;
+    }
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    /* Part1 Ends Here */
+
+
+
+
+
+    /* Media Query For Footer Starts Here */
+    .container2 {
+        width: 100%;
+        height: 200vh;
+        /* position:fixed; */
+    }
+    .container2 .left1 {
+        width: 100%;
+        margin-top: 6rem;
+    }
+    .container2 .left25 {
+        width: 100%;
+        text-align: left;
+    }
+    .container2 .right25 {
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .container2 .right1 {
+        float: left;
+        width: 100%;
+    }
+    .texts1,
+    .texts2,
+    .texts {
+        margin-left: 3rem;
+    }
+    /* First Right */
+    .logos {
+        text-align: left;
+        margin-left: 3rem;
+    }
+    /* Media Query for footer ends here */
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
