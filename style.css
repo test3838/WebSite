@@ -4,11 +4,17 @@
     /* font-family: 'Oswald', sans-serif; */
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: #fff;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px;
     color: #666;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 nav {
@@ -20,6 +26,7 @@ nav {
     width: 100%;
     height: 85px;
     position: fixed;
+    z-index: 100;
     font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
     font-weight: 500;
 
@@ -130,6 +137,8 @@ ul li ul li a:hover{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 100%;
+    overflow: hidden;
     /* Needed to position the navbar */
     position: relative;
     height: 96vh;
@@ -187,7 +196,11 @@ h2 {
     align-content: center;
     margin: 30px;
     padding: 110px 100px; 
-    background-color: white;
+    max-width: 100%;
+    background-color: rgb(12, 12, 12);
+    border-top: 10px solid rgb(12, 12, 12, 0.1);
+    border-width: 100%;
+    border-bottom: 10px solid rgb(12, 12, 12, 0.1);
 }
 .project1 {
     height: 700px;
@@ -197,6 +210,52 @@ h2 {
     text-align: center;
     padding: 50px;
     margin: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.project2and3Container {
+    display: flex;
+    flex-direction: row wrap;
+    flex-basis: auto;
+    justify-content: space-between;
+    width: 100%;
+}
+.project2{
+    order: 1;
+    width:50%;
+    margin: 0 auto;
+    height: 700px;
+    width: 500px;
+    background-color: black;
+    border: 8px solid rgb(126, 124, 124);
+    text-align: center;
+    padding: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .project3{
+    order: 2;
+    width:50%;
+    margin: 0 auto;
+    height: 700px;
+    width: 500px;
+    background-color: black;
+    border: 8px solid rgb(126, 124, 124);
+    text-align: center;
+    padding: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  .project4 {
+    height: 700px;
+    width: 500px;
+    background-color: black;
+    border: 8px solid rgb(126, 124, 124);
+    text-align: center;
+    padding: 50px;
+    margin: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 .project1Img {
     width: 100%;
@@ -205,9 +264,215 @@ h2 {
     overflow: none;
 }
 .projectHeading {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    clear: both;
+}
+.projectHeadingContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    float: left;
+    width: 60%;
+    padding: 50px;
+}
+.projectHeading2 {
+    position: left;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    clear: both;
+    float: left;
+}
+.projectHeading3 {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    clear: both;
+    float: right;
+}
+.projectHeading:nth-child(n+2) {
+    margin-top: 160px;
     font-size: 40px;
 }
+.projectFooter {
+    font-size: 40px;
+    margin-top: 20%;
+    margin-bottom: 50px;
+}
+@media (max-width:1012px){
+    .products-container {
+        margin: 0 auto;
+        }
+        .project1 {
+            height: 500px;
+            width: 300px;
+        }
+        .projectHeadingContainer {
+            display: absolute;
+            flex-direction: column;
+            justify-content: stretch;
+            text-align: center;
+            margin-bottom: -150px;
+            width: 100%;
+            padding: 50px;
+        }
+        .project2and3Container {
+            flex-direction: column;
+            margin: 0px;
+        }.project2 {
+            height: 500px;
+            width: 300px;
+        }
+        .project3 {
+            height: 500px;
+            width: 300px;
+        }
+        .project4 {
+            height: 500px;
+            width: 300px; 
+        }
+    }
+    @media (max-width:768px){
+        .products {
+            width: 100%;
+            padding: 0px 0px;
+        }
+        .products-container {
+            margin: 0 auto;
+            padding: 0px 0px;
+            }
+            .project1 {
+                height: 350px;
+                width: 220px;
+            }
+            .project2and3Container {
+                flex-direction: column;
+                margin-left: 0px;
+                padding: 0px;
+            }.project2 {
+                height: 350px;
+                width: 220px;
+                overflow: hidden;
+            }
+            .project3 {
+                height: 350px;
+                width: 220px;
+                overflow: hidden;
+            }
+            .project4 {
+                height: 350px;
+                width: 220px;
+            }
+    }
+    @media (max-width:320px){
+        .products {
+            width: 100%;
+            padding: 0px 0px;
+        }
+        .products-container {
+            margin: 0 auto;
+            padding: 0px 0px;
+            }
+            .project1 {
+                height: 350px;
+                width: 200px;
+            }
+            .project2and3Container {
+                flex-direction: column;
+                margin-left: 0px;
+                padding: 0px;
+            }.project2 {
+                height: 350px;
+                width: 200px;
+                overflow: hidden;
+            }
+            .project3 {
+                height: 350px;
+                width: 200px;
+                overflow: hidden;
+            }
+            .project4 {
+                height: 350px;
+                width: 200px;
+            }
+    }
 /*Products Ends Here*/
+
+/* About Us Start Here */
+.aboutus-container {
+    display: -webkit-flex;
+    display: -mos-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 30px;
+    padding: 110px 100px; 
+    max-width: 100%;
+    border-top: 10px solid rgb(12, 12, 12, 0.1);
+    border-width: 100%;
+    border-bottom: 10px solid rgb(12, 12, 12, 0.1);
+}
+.aboutusHeadingContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    float: left;
+    width: 64%;
+}
+.sarahHeading {
+    position: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    clear: both;
+    float: left;
+}
+.sahilHeading {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    clear: both;
+    float: right;
+}
+.bioContainer {
+    display: flex;
+    flex-direction: row wrap;
+    flex-basis: auto;
+    justify-content: space-between;
+    width: 100%;
+}
+.aboutSarah{
+    order: 1;
+    width:50%;
+    margin: 0 auto;
+    height: 700px;
+    width: 500px;
+    text-align: center;
+    padding: 50px;
+    margin-top: 5px;
+    margin-bottom: 100px;
+  }
+  .aboutSahil{
+    order: 1;
+    width:50%;
+    margin: 0 auto;
+    height: 700px;
+    width: 500px;
+    text-align: center;
+    padding: 50px;
+    margin-top: 5px;
+    margin-bottom: 100px;
+  }
+  .contactFooter {
+      margin: 30px;
+      font-size: 16px;
+  }
+/* About Us Ends Here */
 
 /*Apply styles after scroll*/
 
