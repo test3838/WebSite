@@ -1,0 +1,512 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+}
+body {
+    background-color: #fff;
+    font-family: "Open San", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: #666;
+    background-color: black;
+}
+
+/* Navbar */
+nav{
+   height: 90px;
+   background:#0003;
+   position: fixed;
+   /* float: right; */
+   width: 100%;
+  }
+.nav img{
+  width: 150px;
+  position: absolute;
+  top:2px;
+  height: 70px;
+  left: 12%;
+
+}
+.nav-links{
+  float: right;
+  margin-right: 50px;
+
+}
+nav ul .navlinking{
+  display: inline-block;
+  /* line-height: 50px; */
+  margin-right:2rem;
+  margin-top:2rem;
+  text-align: center;
+}
+
+nav ul li a{
+  position: relative;
+  font-size: 18px;
+  color: white;
+  /* padding: 5px 0; */
+  text-transform: uppercase;
+
+}
+nav ul li a:before{
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: white;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform .4s linear;
+}
+
+nav ul li a:hover:before{
+  transform: scaleX(1);
+  transform-origin: left;
+
+}
+label #navbutton,
+label #cancel{
+  color: white;
+  font-size: 30px;
+  float:right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+#active {
+    color: red;
+}
+
+ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+    margin-left: 48.4rem;
+    list-style: none;
+    margin-top: 0.1rem;;
+    background-color: #fff1;
+    width: 500px;
+    height: 40vh;
+
+}
+
+ul li:hover>ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+ul li ul li:hover {
+    background-color: #fff8
+}
+
+.hello {
+    width: 50%;
+    float: left;
+    margin-top: 2rem;
+    margin-left: 5px;
+}
+
+
+.hellos {
+    float: left;
+    width: 45%;
+    margin-left: 2px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+
+.drophover {
+  background-color: none;
+  font-size: 15px;
+
+}
+.drophover:hover{
+  background-color: none;
+}
+ul li ul li .dropdown:hover{
+  background-color: none;
+  /* font-size: 10px; */
+
+}
+/* Navbar */
+
+
+
+/* Part1 Starts Here */
+.bg-img {
+    background-image: url("images/road.jpg");
+    min-height: 380px;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Needed to position the navbar */
+    position: relative;
+    height: 96vh;
+}
+.container {
+    text-align: center;
+    padding-top: 13rem;
+    padding-right: 0rem;
+    padding-bottom: 9rem;
+    padding-left: 0px;
+}
+.headline{
+  font-weight: 700;
+    font-size: 80px;
+    font-display: block;
+    color: #ffffff!important;
+    text-align: center;
+    text-shadow: 0em 0.1em 0.1em rgba(0, 0, 0, 0.4)
+}
+.subheadline {
+    font-size: 26px;
+    color: #ffffff!important;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 0em 0.1em 0.1em #9b9b9b;
+}
+/*Apply styles after scroll*/
+
+.scrolling-active {
+    background-color: #fff;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+}
+
+.scrolling-active .nav {
+    height: 50px;
+}
+
+.scrolling-active .nav a {
+    color: #313131;
+}
+
+.scrolling-active .nav #logo {
+    height: 50px;
+}
+
+.scrolling-active .nav-link::after {
+    background-color: #313131;
+}
+
+
+/*Apply styles after scroll end*/
+
+
+
+
+
+/* Footer Starts Here */
+
+.container2 {
+    width: 100%;
+    margin: auto;
+    height: auto;
+    background: grey;
+    overflow: hidden;
+    text-align: center;
+    height: 60vh;
+    color: #eee;
+    font-weight: 240;
+}
+
+.container2 .left1 {
+    float: left;
+    width: 30%;
+    margin-top: 30px;
+}
+
+.container2 .left25 {
+    float: left;
+    width: 20%;
+    margin-top: 20px;
+}
+
+.container2 .right25 {
+    float: left;
+    width: 20%;
+    margin-top: 10px;
+    color: white;
+}
+
+.container2 .right1 {
+    float: left;
+    width: 30%;
+    margin-top: 10px;
+    /* margin-right: 20px; */
+}
+
+
+.container2 .right25 .texts2 p a{
+  color:#fff;
+  text-align: left;
+}
+.texts2 p h2{
+    text-align: left;
+}
+/* For first lefy  and Second left*/
+
+.texts p a,
+.texts1 p a {
+    color: #eee;
+    font-family: serif;
+    font-weight: 20;
+}
+
+.texts {
+    text-align: left;
+    margin-left: 2rem;
+    margin-top: -0.6rem;
+
+}
+
+.texts .texts4{
+  font-size:30px;
+  text-align: left;
+  overflow: hidden;
+  font-weight: 100;
+  margin-bottom: 2rem;
+  margin-left: -0.3rem;
+
+}
+
+.texts p,
+.texts1 p,
+.texts2 p {
+    margin-bottom: 18px;
+    font-family: serif;
+    font-weight: 20;
+}
+
+a{
+  text-decoration: none;
+}
+/* For Second Left */
+
+.texts1 {
+    text-align: left;
+    margin-left: 3rem;
+    margin-top: -1rem;
+}
+
+
+/* For Second Right */
+
+.texts2 {
+    text-align: left;
+}
+
+
+/* First Right */
+
+.logos {
+    margin-right: 9rem;
+    margin-top: 0.5rem;
+    radius: 20px;
+    margin-top: 2rem;
+
+    /* border-radius: 50%; */
+}
+
+.images2 {
+    border-radius: 50%;
+    margin-right: 2px;
+}
+
+/* h2{ */
+.right1 .right1header{
+  margin-right: 12rem;
+}
+
+/* Media Queries */
+
+/* MediaQuery For Navbar */
+
+@media (max-width:1118px) {
+  nav img{
+    left:8%;
+  }
+}
+@media (max-width:944px) {
+
+/* Media Query FOr Navnar Ends Here */
+    /* Media Query For Footer Starts Here */
+    .container2 {
+        width: 100%;
+        height: 200vh;
+        /* position:fixed; */
+    }
+    .container2 .left1 {
+        width: 100%;
+        margin-top: 6rem;
+    }
+    .container2 .left25 {
+        width: 100%;
+        text-align: left;
+    }
+    .container2 .right25 {
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .container2 .right1 {
+        float: left;
+        width: 100%;
+    }
+    .texts1,
+    .texts2,
+    .texts {
+        margin-left: 3rem;
+    }
+    /* First Right */
+    .logos {
+        text-align: left;
+        margin-left: 3rem;
+    }
+    /* Media Query for footer ends here */
+}
+
+
+/* MediaQuery For Mobile */
+@media (max-width:860px) {
+  label #navbutton{
+    display: block;
+    margin-left: 34rem;
+    float: right;
+  }
+  ul{
+    position: fixed;
+    width: 80%;
+    height: 60vh;
+    background: #0001;
+    top:89px;
+    left: -100%;
+    text-align: center;
+    transition:all .5s;
+  }
+
+  nav ul .navlinking{
+    display: block;
+    margin: 50px 0;
+    line-height:8px;
+  }
+
+  nav ul .navlinking a{
+    font-size: 20px;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  #check:checked ~ label #navbutton{
+    display: none;
+  }
+  #check:checked ~ label #cancel{
+    display:block;
+  }
+/* Media Query For Navbar Ends Here */
+
+  /* Part1 Media Query Starts Here */
+  .bg-img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* Needed to position the navbar */
+      position: relative;
+      /* height: 92vh; */
+  }
+  .container {
+      text-align: center;
+      padding-top:14rem;
+      padding-right: 0rem;
+      padding-bottom: 3rem;
+      padding-left: 0px;
+  }
+  .headline {
+      font-size: 35px;
+      color: white;
+      font-weight: bolder;
+      text-align: center;
+  }
+  .subheadline {
+      display: none;
+  }
+  h2 {
+      font-size: 15px;
+      text-align: center;
+  }
+  .btn,
+  .btn-1 {
+      font-size: 10px;
+      margin-top: 30px;
+      padding: 8px;
+  }
+  /* Part1 Ends Here */
+
+
+
+    /* Media Query For Footer Starts Here */
+    .container2 {
+        width: 100%;
+        height: 200vh;
+        /* position:fixed; */
+    }
+    .container2 .left1 {
+        width: 100%;
+        margin-top: 6rem;
+    }
+    .container2 .left25 {
+        width: 100%;
+        text-align: left;
+    }
+    .container2 .right25 {
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .container2 .right1 {
+          margin-top: 2rem;
+        width: 100%;
+        /* text-align: left; */
+        /* margin-left: 2rem; */
+    }
+    .right1header{
+      margin-right: 2rem;
+      display: flex;
+      flex-direction: row;
+      margin-left: 3rem;
+      font-size: 20px;
+    }
+    .logos {
+        /* text-align: left; */
+        /* margin-left: 1rem; */
+        margin-right: 108rem;
+        display: flex;
+        float: left;
+    }
+    .images2{
+      width: 32px;
+      height: 32px;
+      float: right;
+      margin-right: 3px;
+    }
+
+    /* Media Query for footer ends here */
+  }
