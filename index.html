@@ -8,6 +8,7 @@
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.0.1/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
@@ -44,7 +45,7 @@
             </li>
 
 
-          <li ><a href="#" class="hovering">Products</a></li>
+          <li ><a href="#products" class="hovering">Products</a></li>
           <li ><a href="#" class="hovering">Contact Us</a></li>
           <li ><a href="#" class="hovering">Search</a></li>
 
@@ -58,20 +59,60 @@
       </nav>
       <!-- Header Part -->
       <div class="container">
-          <h1 class=headline>
-            Team
+        <canvas id="c"></canvas>  <!--Particle Animation Wrapper -->
+          <h1 class=headline data-aos="slide-left">
+            SurgeTech Solutions
           </h1>
             <h2 class="subheadline">
                 Our Clients are our First Prefernce
                 <br/>
             </h2>
-
         </div>
       </div>
 
 
     <!-- Products -->
-
+    <!-- Project One -->
+<section id="products" class="products-container">
+  <h1 class="projectHeading" data-aos="slide-left">Project 1</h1>
+  <br>
+  <div class="project1" data-aos="slide-up">
+    <img src="./images/road.jpg" class="project1Img" alt="project1" >
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="projectHeading" data-aos="slide-left">Project1 Explanation</h1>
+  </div>
+<!-- Project Two -->
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <div class="project2">
+    <h1 class="projectHeading" data-aos="slide-left">Project 1</h1>
+    <br>
+    <div class="project1" data-aos="slide-up">
+      <img src="./images/road.jpg" class="project1Img" alt="project1" >
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+<br>
+      <h1 class="projectHeading" data-aos="slide-up">Project1 Explanation</h1>
+  </div>
+</section>
     </div>
 
 
@@ -215,6 +256,7 @@
     </footer>
     <!-- Footer Ends Here -->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
       <script src="script.js" charset="utf-8"></script>
   </body>
 </html>
