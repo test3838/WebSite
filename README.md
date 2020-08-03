@@ -1,3 +1,3 @@
 # WebSite
 Website for Startup
-By Team Sarah and Sahil
+`By Team Sarah and Sahil`
