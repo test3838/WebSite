@@ -408,10 +408,12 @@ h2 {
     display: -o-flex;
     display: flex;
     flex-direction: column;
+    background-color: rgb(221, 217, 217);
     align-items: center;
     align-content: center;
     margin: 30px;
-    padding: 110px 100px; 
+    padding: 110px 150px; 
+    padding-bottom: 150px;
     max-width: 100%;
     border-top: 10px solid rgb(12, 12, 12, 0.1);
     border-width: 100%;
@@ -427,7 +429,7 @@ h2 {
 .sarahHeading {
     position: left;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 40px;
     clear: both;
     float: left;
@@ -446,6 +448,12 @@ h2 {
     justify-content: space-between;
     width: 100%;
 }
+.contact1Img {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    border: 11px solid rgb(185, 183, 183);
+}
 .aboutSarah{
     order: 1;
     width:50%;
@@ -457,6 +465,12 @@ h2 {
     margin-top: 5px;
     margin-bottom: 100px;
   }
+  .contact2Img {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    border: 11px solid rgb(185, 183, 183);
+}
   .aboutSahil{
     order: 1;
     width:50%;
@@ -472,6 +486,78 @@ h2 {
       margin: 30px;
       font-size: 16px;
   }
+  @media (max-width:1012px){
+    .aboutus-container {
+        margin: 0 auto;
+        }
+        .aboutSarah{
+            height: 500px;
+            width: 300px;
+        }
+        .aboutusHeadingContainer {
+            display: absolute;
+            flex-direction: column;
+            justify-content: stretch;
+            text-align: center;
+            margin-bottom: -150px;
+            width: 100%;
+            padding: 50px;
+        }
+        .bioContainer {
+            flex-direction: column;
+            margin: 0px;
+        }
+        .aboutSahil {
+            height: 500px;
+            width: 300px;
+        }
+    }
+    @media (max-width:768px){
+        .aboutus-container {
+            width: 100%;
+            padding: 0px 0px;
+        }
+        .aboutus-container {
+            margin: 0 auto;
+            padding: 0px 0px;
+            }
+            .aboutSarah {
+                height: 350px;
+                width: 220px;
+            }
+            .bioContainer {
+                flex-direction: column;
+                margin-left: 0px;
+                padding: 0px;
+            }.aboutSahil {
+                height: 350px;
+                width: 220px;
+                overflow: hidden;
+            }
+    }
+    @media (max-width:320px){
+        .aboutus-container {
+            width: 100%;
+            padding: 0px 0px;
+        }
+        .aboutus-container {
+            margin: 0 auto;
+            padding: 0px 0px;
+            }
+            .aboutSarah {
+                height: 350px;
+                width: 200px;
+            }
+            .bioContainer {
+                flex-direction: column;
+                margin-left: 0px;
+                padding: 0px;
+            }.aboutSahil {
+                height: 350px;
+                width: 200px;
+                overflow: hidden;
+            }
+    }
 /* About Us Ends Here */
 
 /*Apply styles after scroll*/
